@@ -1,7 +1,4 @@
-<div align="center">
-🎯 Controlled Question Generation Using Prompt Templates
-AI-powered Prompt Engineering System for Intelligent Question Generation
-<img src="https://img.shields.io/badge/Prompt%20Engineering-AI-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Domain-Specific-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Difficulty-Control-important?style=for-the-badge" /> <img src="https://img.shields.io/badge/JSON-Structured-orange?style=for-the-badge" /> </div>
+<div align="center"> <h1>🎯 Controlled Question Generation Using Prompt Templates</h1> <h3>AI-powered Prompt Engineering System for Intelligent Question Generation</h3> <img src="https://img.shields.io/badge/Prompt%20Engineering-AI-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Domain-Specific-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Difficulty-Control-important?style=for-the-badge" /> <img src="https://img.shields.io/badge/JSON-Structured-orange?style=for-the-badge" /> </div>
 📌 Project Overview
 
 This project focuses on designing structured prompt templates for controlled AI-based question generation.
@@ -120,19 +117,6 @@ Output format (JSON only):
   "topic": "...",
   "difficulty": "..."
 }
-📥 Example Input
-{
-  "domain": "DSA",
-  "previous_question": "What is binary search?",
-  "candidate_answer": "It searches an element by dividing the array into two parts.",
-  "difficulty": "medium"
-}
-📤 Example Output
-{
-  "question": "How would you modify binary search to work on a rotated sorted array?",
-  "topic": "Searching Algorithms",
-  "difficulty": "medium"
-}
 3️⃣ Difficulty-Control Prompt
 📌 Purpose
 
@@ -155,32 +139,6 @@ Additional Constraints:
 - Do NOT generate vague or general questions.
 - Ensure the question is domain-specific.
 - If difficulty is invalid, default to "medium".
-
-Output format (JSON only):
-{
-  "question": "...",
-  "topic": "...",
-  "difficulty": "..."
-}
-📤 Example Outputs
-✅ Easy
-{
-  "question": "What is a stack data structure and what are its basic operations?",
-  "topic": "Stack",
-  "difficulty": "easy"
-}
-✅ Medium
-{
-  "question": "Implement a stack using an array and explain how overflow and underflow conditions are handled.",
-  "topic": "Stack",
-  "difficulty": "medium"
-}
-✅ Hard
-{
-  "question": "Design an algorithm to evaluate a postfix expression using a stack and analyze its time complexity.",
-  "topic": "Stack Applications",
-  "difficulty": "hard"
-}
 4️⃣ Topic Variation Prompt
 📌 Purpose
 
@@ -198,33 +156,8 @@ Rules:
 - The question must belong to the given domain.
 - Do NOT repeat any topic from the previously covered topics.
 - Select a different subtopic within the domain.
-- Maintain the required difficulty level:
-  - easy → conceptual
-  - medium → applied
-  - hard → problem-solving
+- Maintain the required difficulty level.
 - Avoid vague or generic questions.
-
-Output format (JSON only):
-{
-  "question": "...",
-  "topic": "...",
-  "difficulty": "..."
-}
-📥 Example Input
-{
-  "domain": "DSA",
-  "difficulty": "medium",
-  "previously_covered_topics": [
-    "Arrays",
-    "Linked List"
-  ]
-}
-📤 Example Output
-{
-  "question": "Explain how a binary tree is represented in memory and perform inorder traversal on a given example.",
-  "topic": "Trees",
-  "difficulty": "medium"
-}
 ⚙️ Constraints Handled
 
 The system prevents:
@@ -246,9 +179,6 @@ Structured Output	✅ Achieved
 Topic Diversity	✅ Achieved
 Non-Repetitive Generation	✅ Achieved
 🚀 Future Enhancements
-
-Future improvements can include:
-
 🌐 Flask/FastAPI Integration
 🗄️ Database Connectivity
 🤖 AI-Based Answer Evaluation
@@ -265,9 +195,5 @@ Domain relevance
 Difficulty control
 Structured outputs
 Topic diversity
-
-The system can serve as a foundation for:
-
-AI interview platforms
-Educational applications
-Online assessment systems
+<div align="center">
+</div>
