@@ -1,95 +1,60 @@
 <div align="center">
+🎯 Controlled Question Generation Using Prompt Templates
+AI-powered Prompt Engineering System for Intelligent Question Generation
+<img src="https://img.shields.io/badge/Prompt%20Engineering-AI-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Domain-Specific-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Difficulty-Control-important?style=for-the-badge" /> <img src="https://img.shields.io/badge/JSON-Structured-orange?style=for-the-badge" /> </div>
+📌 Project Overview
 
-# 🎯 Controlled Question Generation Using Prompt Templates
-
-### AI-powered Prompt Engineering System for Intelligent Question Generation
-
-<img src="https://img.shields.io/badge/Prompt%20Engineering-AI-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Domain-Specific-success?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Difficulty-Control-important?style=for-the-badge" />
-<img src="https://img.shields.io/badge/JSON-Structured-orange?style=for-the-badge" />
-
-</div>
-
----
-
-# 📌 Project Overview
-
-This project focuses on designing structured prompt templates for **controlled AI-based question generation**.
+This project focuses on designing structured prompt templates for controlled AI-based question generation.
 
 The system generates:
-- ✅ Domain-specific questions
-- ✅ Difficulty-controlled questions
-- ✅ Context-aware follow-up questions
-- ✅ Non-repetitive and structured outputs
+
+✅ Domain-specific questions
+✅ Difficulty-controlled questions
+✅ Context-aware follow-up questions
+✅ Non-repetitive and structured outputs
 
 The prompts are designed for applications such as:
-- 🎓 Educational Platforms
-- 💼 AI Interview Systems
-- 📝 Online Assessment Tools
-- 📚 Adaptive Learning Systems
 
----
-
-# 🎯 Objective
+🎓 Educational Platforms
+💼 AI Interview Systems
+📝 Online Assessment Tools
+📚 Adaptive Learning Systems
+🎯 Objective
 
 The main objective of this project is to create reusable prompt templates that guide AI models to generate:
 
-- High-quality questions
-- Difficulty-specific questions
-- Context-aware follow-up questions
-- Diverse and non-repetitive topics
+High-quality questions
+Difficulty-specific questions
+Context-aware follow-up questions
+Diverse and non-repetitive topics
 
 The system also ensures:
-- Domain relevance
-- Difficulty consistency
-- Structured JSON responses
-- Topic variation
 
----
+Domain relevance
+Difficulty consistency
+Structured JSON responses
+Topic variation
+🚀 Features
+Feature	Description
+✅ Domain-Specific Generation	Questions belong strictly to the provided domain
+✅ Difficulty Control	Supports Easy, Medium, and Hard levels
+✅ Context Awareness	Generates intelligent follow-up questions
+✅ Topic Variation	Prevents repetition and ensures diversity
+✅ Structured Output	Returns responses in JSON format
+✅ Edge Case Handling	Handles invalid or missing inputs
+🛠️ Technologies Used
+Technology	Purpose
+🤖 Prompt Engineering	AI Prompt Design
+🧠 Generative AI Concepts	Intelligent Question Generation
+📄 JSON Formatting	Structured Outputs
+🔤 NLP Concepts	Language Understanding
+📂 Prompt Templates Included
+1️⃣ Base Question Prompt
+📌 Purpose
 
-# 🚀 Features
-
-| Feature | Description |
-|---|---|
-| ✅ Domain-Specific Generation | Questions belong strictly to the provided domain |
-| ✅ Difficulty Control | Supports Easy, Medium, and Hard levels |
-| ✅ Context Awareness | Generates intelligent follow-up questions |
-| ✅ Topic Variation | Prevents repetition and ensures diversity |
-| ✅ Structured Output | Returns responses in JSON format |
-| ✅ Edge Case Handling | Handles invalid or missing inputs |
-
----
-
-# 🛠️ Technologies Used
-
-<div align="center">
-
-| Technology | Purpose |
-|---|---|
-| 🤖 Prompt Engineering | AI Prompt Design |
-| 🧠 Generative AI Concepts | Intelligent Question Generation |
-| 📄 JSON Formatting | Structured Outputs |
-| 🔤 NLP Concepts | Language Understanding |
-
-</div>
-
----
-
-# 📂 Prompt Templates Included
-
----
-
-# 1️⃣ Base Question Prompt
-
-## 📌 Purpose
 Generates a standard domain-specific question based on difficulty level.
 
----
-
-## 🧾 Prompt Template
-
-```text
+🧾 Prompt Template
 You are an expert question generator.
 
 Generate ONE high-quality question based on the following input:
@@ -113,46 +78,26 @@ Output format (JSON only):
   "topic": "...",
   "difficulty": "..."
 }
-```
-
----
-
-## 📥 Example Input
-
-```json
+📥 Example Input
 {
   "domain": "DSA",
   "difficulty": "medium"
 }
-```
-
----
-
-## 📤 Example Output
-
-```json
+📤 Example Output
 {
   "question": "Explain how binary search works on a sorted array and analyze its time complexity.",
   "topic": "Searching Algorithms",
   "difficulty": "medium"
 }
-```
+2️⃣ Context-Aware Prompt
+📌 Purpose
 
----
-
-# 2️⃣ Context-Aware Prompt
-
-## 📌 Purpose
 Generates intelligent follow-up questions using:
-- Previous question
-- Candidate answer
-- Difficulty level
 
----
-
-## 🧾 Prompt Template
-
-```text
+Previous question
+Candidate answer
+Difficulty level
+🧾 Prompt Template
 You are an intelligent interviewer.
 
 Generate a follow-up question based on:
@@ -175,45 +120,25 @@ Output format (JSON only):
   "topic": "...",
   "difficulty": "..."
 }
-```
-
----
-
-## 📥 Example Input
-
-```json
+📥 Example Input
 {
   "domain": "DSA",
   "previous_question": "What is binary search?",
   "candidate_answer": "It searches an element by dividing the array into two parts.",
   "difficulty": "medium"
 }
-```
-
----
-
-## 📤 Example Output
-
-```json
+📤 Example Output
 {
   "question": "How would you modify binary search to work on a rotated sorted array?",
   "topic": "Searching Algorithms",
   "difficulty": "medium"
 }
-```
+3️⃣ Difficulty-Control Prompt
+📌 Purpose
 
----
-
-# 3️⃣ Difficulty-Control Prompt
-
-## 📌 Purpose
 Strictly enforces question difficulty levels.
 
----
-
-## 🧾 Prompt Template
-
-```text
+🧾 Prompt Template
 You are a strict difficulty-controlled question generator.
 
 Generate ONE question based on:
@@ -237,54 +162,31 @@ Output format (JSON only):
   "topic": "...",
   "difficulty": "..."
 }
-```
-
----
-
-## 📤 Example Outputs
-
-### ✅ Easy
-
-```json
+📤 Example Outputs
+✅ Easy
 {
   "question": "What is a stack data structure and what are its basic operations?",
   "topic": "Stack",
   "difficulty": "easy"
 }
-```
-
-### ✅ Medium
-
-```json
+✅ Medium
 {
   "question": "Implement a stack using an array and explain how overflow and underflow conditions are handled.",
   "topic": "Stack",
   "difficulty": "medium"
 }
-```
-
-### ✅ Hard
-
-```json
+✅ Hard
 {
   "question": "Design an algorithm to evaluate a postfix expression using a stack and analyze its time complexity.",
   "topic": "Stack Applications",
   "difficulty": "hard"
 }
-```
+4️⃣ Topic Variation Prompt
+📌 Purpose
 
----
-
-# 4️⃣ Topic Variation Prompt
-
-## 📌 Purpose
 Ensures topic diversity and prevents repetition.
 
----
-
-## 🧾 Prompt Template
-
-```text
+🧾 Prompt Template
 You are a question generator that ensures topic diversity.
 
 Generate ONE question based on:
@@ -308,13 +210,7 @@ Output format (JSON only):
   "topic": "...",
   "difficulty": "..."
 }
-```
-
----
-
-## 📥 Example Input
-
-```json
+📥 Example Input
 {
   "domain": "DSA",
   "difficulty": "medium",
@@ -323,90 +219,55 @@ Output format (JSON only):
     "Linked List"
   ]
 }
-```
-
----
-
-## 📤 Example Output
-
-```json
+📤 Example Output
 {
   "question": "Explain how a binary tree is represented in memory and perform inorder traversal on a given example.",
   "topic": "Trees",
   "difficulty": "medium"
 }
-```
-
----
-
-# ⚙️ Constraints Handled
+⚙️ Constraints Handled
 
 The system prevents:
-- ❌ Repeated questions
-- ❌ Vague questions
-- ❌ Out-of-domain content
 
----
-
-# 🧩 Edge Cases Handling
-
-| Edge Case | Handling Method |
-|---|---|
-| Missing Domain | Defaults to `"General Computer Science"` |
-| Invalid Difficulty | Defaults to `"medium"` |
-| Repeated Topics | Uses topic variation logic |
-| Weak Candidate Answer | Generates foundational follow-up questions |
-
----
-
-# ✅ Acceptance Criteria
-
-| Requirement | Status |
-|---|---|
-| Domain Accuracy | ✅ Achieved |
-| Difficulty Consistency | ✅ Achieved |
-| Structured Output | ✅ Achieved |
-| Topic Diversity | ✅ Achieved |
-| Non-Repetitive Generation | ✅ Achieved |
-
----
-
-# 🚀 Future Enhancements
+❌ Repeated questions
+❌ Vague questions
+❌ Out-of-domain content
+🧩 Edge Cases Handling
+Edge Case	Handling Method
+Missing Domain	Defaults to "General Computer Science"
+Invalid Difficulty	Defaults to "medium"
+Repeated Topics	Uses topic variation logic
+Weak Candidate Answer	Generates foundational follow-up questions
+✅ Acceptance Criteria
+Requirement	Status
+Domain Accuracy	✅ Achieved
+Difficulty Consistency	✅ Achieved
+Structured Output	✅ Achieved
+Topic Diversity	✅ Achieved
+Non-Repetitive Generation	✅ Achieved
+🚀 Future Enhancements
 
 Future improvements can include:
 
-- 🌐 Flask/FastAPI Integration
-- 🗄️ Database Connectivity
-- 🤖 AI-Based Answer Evaluation
-- 📊 Adaptive Interview Systems
-- 💻 Automatic Coding Question Generation
-
----
-
-# 📖 Conclusion
+🌐 Flask/FastAPI Integration
+🗄️ Database Connectivity
+🤖 AI-Based Answer Evaluation
+📊 Adaptive Interview Systems
+💻 Automatic Coding Question Generation
+📖 Conclusion
 
 This project demonstrates how prompt engineering can be used to build a controlled AI-based question generation system.
 
 The designed prompts ensure:
-- Consistency
-- Domain relevance
-- Difficulty control
-- Structured outputs
-- Topic diversity
+
+Consistency
+Domain relevance
+Difficulty control
+Structured outputs
+Topic diversity
 
 The system can serve as a foundation for:
-- AI interview platforms
-- Educational applications
-- Online assessment systems
 
----
-
-<div align="center">
-
-# 👨‍💻 Author
-
-## Malathi Reddy Pabbathi
-
-⭐ If you found this project useful, consider giving it a star on GitHub!
-
-</div>
+AI interview platforms
+Educational applications
+Online assessment systems
